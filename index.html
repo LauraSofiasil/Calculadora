@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./calculadora.css">
+    <script src="./calculadora.js" defer></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Laura Sofia</h1>
+    <div class="calculadora">
+        <!-- Entrada de texto - o type = text aceita tanto numero qunto as operações (+,-) -->
+        <!-- disabled -> desabilita a função de escrever dentro do input -->
+        <input type="text" disabled id="caixa"> 
+        <div class="divBotoes">
+            <button onclick="limparTudo()">C</button>
+            <button onclick="apagar()">&lt;</button>
+            <button onclick="inserirNoInput('/')">/</button>
+            <button onclick="inserirNoInput('*')">*</button>
+            <button onclick="inserirNoInput('7')">7</button>
+            <button onclick="inserirNoInput('8')">8</button>
+            <button onclick="inserirNoInput('9')">9</button>
+            <button onclick="inserirNoInput('-')">-</button>
+            <button onclick="inserirNoInput('4')">4</button>
+            <button onclick="inserirNoInput('5')">5</button>
+            <button onclick="inserirNoInput('6')">6</button>
+            <button onclick="inserirNoInput('+')">+</button>
+            <button onclick="inserirNoInput('1')">1</button>
+            <button onclick="inserirNoInput('2')">2</button>
+            <button onclick="inserirNoInput('3')">3</button>
+            <button class="botaoZero" onclick="inserirNoInput('0')">0</button>
+            <button onclick="inserirNoInput('.')">.</button>
+            <button class="botaoResultado" onclick="resultado()">=</button>
+        </div>
+   
+    </div>
+</body>
+</html>
